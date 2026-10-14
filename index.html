@@ -1,0 +1,370 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevOps and SRE engineering portfolio">
+  <title>DevOps Engineer | Portfolio</title>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f7f8fa;
+      --surface: #ffffff;
+      --text: #17202d;
+      --muted: #657184;
+      --accent: #1769df;
+      --border: #dce2e9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1050px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      font-weight: 800;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 85px 0;
+      max-width: 780px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 66px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin: 18px 0;
+    }
+
+    .accent {
+      color: var(--accent);
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 650px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 17px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin: 12px 8px 0 0;
+      font-weight: 650;
+      font-size: 14px;
+    }
+
+    .primary {
+      color: white;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    section {
+      padding: 55px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 32px;
+      letter-spacing: -1px;
+      margin: 8px 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .card {
+      padding: 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+    }
+
+    .card h3 {
+      font-size: 17px;
+      margin-top: 0;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #edf3ff;
+      color: #2454a0;
+      padding: 4px 8px;
+      margin: 4px 3px 0 0;
+      border-radius: 5px;
+      font-size: 11px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 9px 13px;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <a class="brand" href="#home">DevOps Portfolio</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container hero" id="home">
+      <div class="eyebrow">Learning by building</div>
+
+      <h1>
+        Building reliable systems,
+        <span class="accent">one deployment at a time.</span>
+      </h1>
+
+      <p class="intro">
+        I'm an aspiring DevOps / SRE engineer learning to build,
+        automate, deploy and troubleshoot reliable systems.
+        My focus is on Linux, cloud infrastructure, Kubernetes,
+        CI/CD and observability.
+      </p>
+
+      <a class="button primary" href="#projects">Explore my projects</a>
+      <a class="button" href="#contact">Get in touch</a>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="eyebrow">Selected work</div>
+        <h2>Projects built to learn by doing.</h2>
+
+        <p class="muted">
+          Practical projects focused on automation, reliability
+          and understanding how systems work.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Kubernetes Application Platform</h3>
+            <p>
+              Deploying a containerized application to a local
+              Kubernetes cluster and practising services,
+              ingress, Helm and troubleshooting.
+            </p>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Helm</span>
+            <span class="tag">Argo CD</span>
+          </article>
+
+          <article class="card">
+            <h3>Secure CI/CD with AWS OIDC</h3>
+            <p>
+              Building a GitHub Actions workflow that uses
+              OpenID Connect to assume an AWS IAM role and
+              publish container images to Amazon ECR.
+            </p>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">AWS IAM</span>
+            <span class="tag">ECR</span>
+          </article>
+
+          <article class="card">
+            <h3>Portfolio Hosting & Observability</h3>
+            <p>
+              Packaging a static website, deploying it locally,
+              exploring monitoring and automating delivery
+              before evaluating AWS hosting.
+            </p>
+            <span class="tag">Docker</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">Grafana</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="eyebrow">Technical toolkit</div>
+        <h2>Understanding over memorization.</h2>
+
+        <p class="muted">
+          Learning how each layer works, how to collect evidence
+          when it fails, and how to make changes safely.
+        </p>
+
+        <div class="skill-list">
+          <span class="skill">Linux</span>
+          <span class="skill">Git & GitHub</span>
+          <span class="skill">Docker</span>
+          <span class="skill">Kubernetes</span>
+          <span class="skill">AWS</span>
+          <span class="skill">Terraform</span>
+          <span class="skill">GitHub Actions</span>
+          <span class="skill">Argo CD</span>
+          <span class="skill">Prometheus</span>
+          <span class="skill">Grafana</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="eyebrow">My approach</div>
+        <h2>Understand. Change. Verify.</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>01. Investigate</h3>
+            <p>
+              Gather evidence, identify symptoms and develop
+              a testable hypothesis.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>02. Improve</h3>
+            <p>
+              Make a controlled change with a clear reason
+              and a way to reverse it.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>03. Verify</h3>
+            <p>
+              Test the outcome, inspect the evidence and
+              document what was learned.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="eyebrow">Connect</div>
+        <h2>Let's talk about engineering.</h2>
+        <p class="muted">
+          Interested in entry-level DevOps, cloud operations
+          and SRE learning opportunities.
+        </p>
+
+        <!-- Replace this placeholder with your real profile. -->
+        <a class="button primary"
+           href="https://github.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Find me on GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© 2026 · DevOps Engineer Portfolio</p>
+    <p>Built to learn in public.</p>
+  </footer>
+</body>
+</html>
